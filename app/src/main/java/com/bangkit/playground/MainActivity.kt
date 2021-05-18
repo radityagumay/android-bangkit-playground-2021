@@ -60,6 +60,8 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     }
 
     override fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        runOnUiThread {
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        }
     }
 }

@@ -5,6 +5,8 @@ class MainPresenterImpl(
 ) : MainContract.Presenter {
 
     override fun doWork() {
-        view.showToast("hello world")
+        while (true) {
+            doWork()
+        }
     }
 }

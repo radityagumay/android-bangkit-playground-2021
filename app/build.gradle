@@ -35,11 +35,6 @@ android {
     }
 
     lintOptions {
-        quiet = false
-        // if set to true (default), stops the build if errors are found.
-        abortOnError = true
-        // if true, only report errors.
-        ignoreWarnings = false
         // if true, treat all warnings as errors
         warningsAsErrors true
     }

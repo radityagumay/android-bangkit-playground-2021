@@ -21,7 +21,7 @@ jobs:
       - android/run-tests:
           test-command: ./gradlew lint testDebug --continue
 
-      # Run unit test
+      # Run unit test on debug
       - android/start-emulator-and-run-tests:
           test-command: ./gradlew testDebugUnitTest
 
